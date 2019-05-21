@@ -1,0 +1,64 @@
+a.ButtonStyle_Part,a.ButtonStyle_Part:visited{
+    background-color: #002fff;
+    color: white;
+    border-radius: 20px;
+    display: inline-block;
+    position: relative;
+    left: 300px;
+    top: 50px;
+    width: 130px;
+    height: 30px;
+    margin-right: 150px;
+    text-align: center;
+}
+
+a.ButtonStyle_Part:hover, a.ButtonStyle_Part:active {
+    background-color: rgba(255, 0, 0, 0);
+    color: rgb(0, 0, 0);
+}
+
+#rectangle {
+    position: relative;
+    left: 300px;
+    width: 650px;
+    height: 340px;
+    background: #4da1f7;
+    overflow: scroll;
+}
+
+.CheckBoxPos{
+    margin: 0;
+    position: relative;
+    left: 1000px;
+    top: 100px;
+}
+
+.TypingText{
+    position: relative;
+    left: 1000px;
+    top: 110px;
+}
+
+.TypingColor{
+    position: relative;
+    left: 1000px;
+    top: 120px;
+}
+
+.TypingAdd{
+    position: relative;
+    left: 1000px;
+    top: 130px;
+}
+
+.TypingStatistics{
+    position: relative;
+    left: 1000px;
+    top: 250px;
+}
+
+.RectangleAdd{
+    position: relative;
+    left: 400px;
+    top: -200px;
+}

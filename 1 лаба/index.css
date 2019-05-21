@@ -1,0 +1,168 @@
+h2.one{
+    color: rgb(40, 40, 40);
+    background-color:  rgb(190,190,190);
+    font-style: inherit;
+    font-size: 150%;
+}
+
+h2.two{
+    color: rgb(70, 70, 70);
+    background-color:  rgb(160,160,160);
+    font-style: initial;
+    font-size: 160%;
+}
+
+h2.three{
+    color: rgb(100,100,100);
+    background-color:  rgb(130,130,130);
+    font-style: italic;
+    font-size: 170%;
+}
+
+h2.four{
+    color: rgb(130,130,130);
+    background-color:  rgb(100,100,100);
+    font-style: normal;
+    font-size: 180%;
+}
+
+h2.five{
+    color: rgb(160,160,160);
+    background-color:  rgb(70, 70, 70);
+    font-style: oblique;
+    font-size: 190%;
+}
+
+h2.six{
+    color: rgb(190,190,190);
+    background-color:  rgb(40, 40, 40);
+    font-style: unset;
+    font-size: 200%;
+}
+
+a.one{
+    font-size: 120%;
+}
+
+a.two{
+    font-size: 120%;
+}
+
+a.three{
+    font-size: 120%;
+}
+
+a.four{
+    font-size: 120%;
+}
+
+a.five{
+    font-size: 120%;
+}
+  
+a.one:hover, a.one:active {
+    color: rgb(0, 255, 0);
+}
+
+a.two:link, a.two:visited {
+    text-decoration: none;
+}
+
+a.two:hover, a.two:active {
+    text-decoration: underline;
+}
+
+a.three:link, a.three:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+a.three:hover, a.three:active {
+    background-color: red;
+}
+
+a.four:link, a.four:visited {
+    background-color: #00ff15;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+a.four:hover, a.four:active {
+    background-color: red;
+}
+
+a.five:link, a.five:visited {
+    background-color: #002fff;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+a.five:hover, a.five:active {
+    background-color: rgba(255, 0, 0, 0);
+    color: rgb(0, 0, 0);
+}
+
+ol.Order{
+    background: #ffe5e5;
+    padding: 5px;
+    margin-left: 50px;
+}
+
+ul.Unorder{
+    background: #16f516;
+    padding: 5px;
+    margin-left: 0px;
+    list-style: square inside url("imageUn.gif");
+}
+
+img.DelPic{
+    border: 5px solid rgb(17, 0, 255);
+    box-shadow: 15px 15px 50px 10px;
+    border-radius: 10px;
+}
+
+img.LocPic{
+    border: 2px solid rgb(255, 0, 0);
+    box-shadow: 7px 8px 30px 5px;
+    border-radius: 15px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+td{
+    text-align: center;
+    height: 50px;
+}
+
+th{
+    background-color: rgb(0, 81, 255);
+    color: rgb(0, 255, 76);
+    height: 90px;
+}
+
+table.table1{
+    width: 100%;
+}
+
+td.type1tab{
+    background-color: rgb(251, 255, 0);
+    font-size: 40px;
+}
+
+td.type2tab{
+    background-color: rgb(185, 88, 137);
+    color: rgb(255, 255, 255);
+}

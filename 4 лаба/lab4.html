@@ -1,0 +1,32 @@
+<html>
+    <head>
+       <script src="lab4.js"></script>
+       <link href="lab4.css" rel="stylesheet">
+    </head>
+    <body>
+        <form id="MainButton" style="display: block;">
+            <a type="button" class="ButtonStyle_Part" onclick="PartNumber(document.getElementById('Part1'))">Часть №1</a>
+            <a type="button" class="ButtonStyle_Part" onclick="PartNumber(document.getElementById('Part2'))">Часть №2</a>
+            <a type="button" class="ButtonStyle_Part" onclick="PartNumber(document.getElementById('Part3'))">Часть №3</a>
+        </form>
+
+        <form id="Part1" style="display: none;">
+            <p class="CheckBoxPos"><input id="RadioFirst" type="radio" name="answer" value="a1" checked="true">В начало </p>
+            <p class="CheckBoxPos"><input id="RadioEnd" type="radio" name="answer" value="a2">В конец</p>
+            <input id="TypingRect" class="TypingText" type="text" value="Tекст"><br>
+            <input id="RectTyping" class="TypingColor" type="color" value="#8b8e92"><br>
+            <input class="TypingStatistics" type="button" value="Статистика" onclick="LookStatistic()"><br>
+            <input class="TypingAdd" type="button" value="Добавить" onclick="AddElement()">
+            <div id="rectangle"></div>
+        </form>
+        <form id="Part2" style="display: none;">
+            <canvas id="mycanvas" width="650" height="340" style="border:1px solid #d3d3d3;position: relative;left: 300px;top: 100px;" onclick="SelectShape()"></canvas>
+            <input class="RectangleAdd" type="button" value="Добавить" onclick="RectangleAdd()">
+        </form>
+        <form id="Part3" style="display: none;">
+            <canvas id="mycanvas2" width="650" height="340" style="border:1px solid #d3d3d3;position: relative;left: 300px;top: 100px;"></canvas>
+            <input class="RectangleAdd" type="button" value="Добавить" onclick="RectangleAdd()">
+        </form>
+
+    </body>
+</html>

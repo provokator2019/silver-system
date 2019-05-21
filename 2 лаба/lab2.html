@@ -1,0 +1,72 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+        //ex1_main:
+        function returnArgumentsArray() {
+            var retArgArr = [];
+            for(var i = 0; i < arguments.length; i++){
+                retArgArr[i] = arguments[i];
+            }
+            return retArgArr;
+        }
+        var global_Arr = returnArgumentsArray(1,2,3,7,3,5);
+        console.log("Task 1(main)-");
+        console.log(global_Arr);
+        //ex1_additional:
+        function F_test(){
+            console.log("Task 1(additional)-param 1:" + arguments[0] + " param 2:" + arguments[1]);
+        }
+        function bindFunction(F, a, b) {
+            F = F.bind(null, a, b);
+            return F;
+        }
+        F_test();
+        var Answer = bindFunction(F_test , 23, 43);
+        Answer();
+        //ex2_main:
+        function sum(x, array_i,i,array){
+            return x + array_i;
+        }
+        function reduce(array, fn) {
+            var x = array[0];
+            for (var i = 1; i < array.length; i++) {
+                x = fn(x, array[i], i, array);
+            }
+            return x;
+        }
+        var red_value = reduce(global_Arr,sum);
+        console.log("Task 2(main)- source:" + global_Arr + " reduce:" + red_value);
+        //ex3_main
+        var Obj_test = {a:1,b:2,c:4,d:6};
+        function getProps(obj) {
+            var arr = [];
+            for (var key in obj) {
+                arr.push(key);
+            }
+            return arr;
+        }
+        var array_obj = getProps(Obj_test);
+        console.log("Task 3(main)-" + " array:");
+        console.log(array_obj);
+        //ex3_additional
+        let handler = {
+            set: function(target, property, value, receiver){
+                target[property] = Math.pow(value,2);
+            }
+        }
+        function GetProxy(obj){
+
+            return new Proxy(obj, handler);
+        }
+        var obj = {};
+        let proxy = GetProxy(obj);
+        proxy.num1=4;
+        console.log("Task 3(additional)- source: 4" + " pow:" + proxy.num1);
+        proxy.num2=3;
+        console.log("Task 3(additional)- source: 3" + " pow:" + proxy.num2 );
+        </script>
+    </body>
+</html>
